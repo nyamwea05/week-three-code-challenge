@@ -1,40 +1,41 @@
 # week-three-code-challenge
-       Film Festival Website
+                                 Flatiron Movie Theater Website
 
-This is a sample website for a film festival, built with HTML, CSS, and JavaScript.
+This is a  website for a  Movie Theater created using HTML, js css and html.
 
 Features
 
-The website allows users to:
+The website  renders the following to the users:
 
-View a list of films
-Click on a film to see more details
-Add tickets to a film
-Reset the number of tickets sold for a film
+enables the users to;
+
+Outlook the list of films.
+Click on a film to view more details.
+Increment tickets to a film.
+Reset the number of tickets sold for a film so as to prevent stock out.
 
 Dependencies
+           In Flariton 
+application, Flatdango, allows a user to purchase movie tickets from the in theater (only ).
 
-The website has no external dependencies.
 
-Code Structure
+Code framework;
 
-The code is structured into the following files:
+The code is structured to execute the following functions:
+The HTML structures the web page and its content.
+The CSS give styling to the elements on the wb page.
+ The JavaScript  fetch's and dispay's films, as well as updating ticket counts.
+ 
+ what should be happening in the web page;
 
-index.html: the main HTML file for the website
-styles.css: the CSS stylesheet for the website
-app.js: the JavaScript code for fetching and rendering films, as well as updating ticket counts
-How to Use
+As soon as the website is opened, the list of films will be displayed on the web page. Clicking on a film will display its details on  the screen, including its title, runtime, description, poster image, capacity, showtime, and number of tickets sold.
+For the purpose of augmenting the number of tickets sold for a film, select the "Add tickets" button, which will result in an increase of one in the quantity of tickets sold.
+ In the interest of refreshing the number of tickets sold for a film, click on the ("Reset tickets")button.
 
-Upon opening the website, the list of films will be displayed on the left-hand side of the screen. Clicking on a film will display its details on the right-hand side of the screen, including its title, runtime, description, poster image, capacity, showtime, and number of tickets sold.
+Contributor
+The main contributor to this mini web is NellieMK65.
 
-To add tickets to a film, click on the "Add tickets" button. This will increase the number of tickets sold for the film by one.
-
-To reset the number of tickets sold for a film, click on the "Reset tickets" button.
-
-Contributing
-
-Contributions to the code are welcome! Please fork the repository and submit a pull request with your changes.
 
 License
 
-This code is licensed under the MIT License. See LICENSE.md for more details.
+This code is licensed under the MIT License. 

@@ -6,15 +6,31 @@
   }
   
   .film-poster {
-    width: 200px;
-    height: auto;
+    width: 400px;
+   min-height: 300vh;
     margin-top: 10px;
   }
   
   #film-details p {
-    margin: 5px 0;
+    margin: 5px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
   }
   
   #film-details button {
     margin-right: 10px;
+    margin-top: 20px;
+    padding: 20px ;
+    background-color: #af704c00;
+    color: rgb(73, 57, 146);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #8e623e;
   }

@@ -2,14 +2,14 @@ const BASE_URL = 'http://localhost:3000';
 const headers = {
     'Content-Type': 'application/json',
 };
-
+//ensure's the document to loads it then fetch's the data to display the films
 document.addEventListener('DOMContentLoaded', (e) => {
     e.preventDefault();
     
     fetchFilms();
 });
 
-// Fetch films from db.json then display/render them on our html
+// Fetch's films from db.json then displays them on our web page 
 function fetchFilms() {
     fetch(`${BASE_URL}/films`, {
         method: 'GET',
@@ -22,28 +22,30 @@ function fetchFilms() {
     });
 }
 
-// Attach or render films on the html
+// dispays the list of films on the webpage
 function renderFilms(films) {
     const listFilmsDiv = document.getElementById('list-films');
 
+    //goes over each film and creates a card for each
     films.forEach((film) => {
         // Create a new div element for each film
         const card = document.createElement('div');
         card.innerText = film.title;
         card.classList.add('list-film-item');
 
-        // Add an onclick listener
+        // Creates an onclick listener to the card to display tha film details
         card.addEventListener('click', () => {
             renderFilmDetails(film);
         });
 
-        // Append each new card to the listFilmsDiv
+        // Append each new card to the listFilmsDiv on the page
         listFilmsDiv.appendChild(card);
     });
 }
 
-// Render one film on the html
+// Displays the details of one film on the html
 async function renderFilmDetails(passedFilm) {
+    //fetch's film details from db.json
     const response = await fetch(
         `${BASE_URL}/films/${passedFilm.id}`,
         {
@@ -56,6 +58,7 @@ async function renderFilmDetails(passedFilm) {
 
     const filmDetailsDiv = document.getElementById('film-details');
 
+      // Creating elements for each piece of film information and set their content
     // Reset film details div
     filmDetailsDiv.innerHTML = '';
 
@@ -88,6 +91,7 @@ async function renderFilmDetails(passedFilm) {
     const ticketsSoldParagraph = document.createElement('p');
     ticketsSoldParagraph.innerText = `Tickets sold: ${film.tickets_sold}`;
 
+     // Creating buttons to update and reset the number of tickets sold
     // Add tickets button
     const addTicketsButton = document.createElement('button');
     addTicketsButton.innerText = 'Add tickets';
@@ -96,13 +100,14 @@ async function renderFilmDetails(passedFilm) {
     addTicketsButton.addEventListener('click', (e) => {
         e.preventDefault();
 
-        // Add one ticket to existing tickets sold
+         // adds the number of tickets sold by 1 and update the db.json
+        
         film.tickets_sold = film.tickets_sold += 1;
 
         updateFilmTickets(film);
     });
 
-    // Reset tickets button
+            // Reset the number of tickets sold to 0 and update the db.json
     const resetTicketsButton = document.createElement('button');
     resetTicketsButton.innerText = 'Reset tickets';
 
@@ -114,7 +119,7 @@ async function renderFilmDetails(passedFilm) {
         resetFilmTickets(film);
     });
 
-    // Attach all elements
+    // takes all the elements created puts them together to be displayed on the web page
     filmDetailsDiv.append(
         titleParagraph,
         runtimeParagraph,
