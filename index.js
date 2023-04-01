@@ -91,6 +91,8 @@ async function renderFilmDetails(passedFilm) {
     const ticketsSoldParagraph = document.createElement('p');
     ticketsSoldParagraph.innerText = `Tickets sold: ${film.tickets_sold}`;
 
+
+
      // Creating buttons to update and reset the number of tickets sold
     // Add tickets button
     const addTicketsButton = document.createElement('button');
@@ -128,3 +130,4 @@ async function renderFilmDetails(passedFilm) {
         capacityParagraph,
         showtimeParagraph,
         ticketsSoldParagraph,)
+

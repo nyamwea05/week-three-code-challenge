@@ -34,7 +34,7 @@ In the interest of refreshing the number of tickets sold for a film, click on th
 
        Contributor:
 
-The main contributor to this mini web is NellieMK65.
+The main contributor to this mini web is ME.
 
          License:
 
