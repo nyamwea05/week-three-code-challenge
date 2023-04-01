@@ -34,3 +34,47 @@
   button:hover {
     background-color: #8e623e;
   }
+
+  /* Change the font family and size of the body text */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  }
+  
+  /* Add a background color and padding to the header */
+  header {
+  background-color: #333;
+  padding: 10px;
+  }
+  
+  /* Change the color and size of the film titles */
+  .film-title {
+  color: #ffcc00;
+  font-size: 24px;
+  }
+  
+  /* Add a border and padding to the film details section */
+  .film-details {
+  border: 1px solid #ccc;
+  padding: 10px;
+  }
+  
+  /* Change the color and size of the "Add tickets" button */
+  .add-tickets-btn {
+  background-color: #ffcc00;
+  color: #333;
+  font-size: 16px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  }
+  
+  /* Change the color and size of the "Reset tickets" button */
+  .reset-tickets-btn {
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  }
