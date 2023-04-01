@@ -12,7 +12,7 @@ The website enables users to:
 
          Dependencies.
 
-The Flatiron application, Flatdango, allows users to purchase movie tickets from the in-theater kiosk only.
+The Flatiron application, Flatdango, allows users to purchase movie tickets from the in-theater counter only.
 
         Code Framework;
 
