@@ -27,11 +27,14 @@ What should be happening on the web page;
 As soon as the website is opened, the list of films will be displayed on the web page. Clicking on a film will display its details on the screen, including its title, runtime, description, poster image, capacity, showtime, and number of tickets sold.
 
 
-To increase the number of tickets sold for a film, select the "Add tickets" button, which will increment the quantity of tickets sold by one. To refresh the number of tickets sold for a film, click on the "Reset tickets" button.
+For the purpose of augmenting the number of tickets sold for a film, select the "Add tickets" button, which will increment the quantity of tickets sold by one. 
+
+
+In the interest of refreshing the number of tickets sold for a film, click on the "Reset tickets" button.
 
        Contributor:
 
-This mini web was created by NellieMK65.
+The main contributor to this mini web is NellieMK65.
 
          License:
 
