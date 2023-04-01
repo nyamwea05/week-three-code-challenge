@@ -1,8 +1,8 @@
 .list-film-item {
     cursor: pointer;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
+    border: 1px solid #cccccc00;
+    padding: 15px;
+    margin-bottom: 12px;
   }
   
   .film-poster {
